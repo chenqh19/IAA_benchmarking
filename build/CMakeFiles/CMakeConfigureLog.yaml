@@ -1,0 +1,1905 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt"
+    message: |
+      The system is: Linux - 6.8.0-45-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/chenqh23/IAA_benchmarking/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/chenqh23/IAA_benchmarking/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QGsZeO"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QGsZeO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QGsZeO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80f33/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_80f33.dir/build.make CMakeFiles/cmTC_80f33.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QGsZeO'
+        Building C object CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80f33.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_80f33.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccKatCgL.s
+        GNU C17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 35e51c4ef55ea8f6b448d85f0fac5984
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80f33.dir/'
+         as -v --64 -o CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o /tmp/ccKatCgL.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_80f33
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80f33.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o -o cmTC_80f33 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_80f33' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_80f33.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBm0iGB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_80f33 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_80f33' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_80f33.'
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QGsZeO'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QGsZeO']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80f33/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_80f33.dir/build.make CMakeFiles/cmTC_80f33.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QGsZeO']
+        ignore line: [Building C object CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80f33.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_80f33.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccKatCgL.s]
+        ignore line: [GNU C17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 35e51c4ef55ea8f6b448d85f0fac5984]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80f33.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o /tmp/ccKatCgL.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_80f33]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80f33.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o -o cmTC_80f33 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_80f33' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_80f33.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBm0iGB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_80f33 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccBm0iGB.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_80f33] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_80f33.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-lA32ZA"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-lA32ZA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-lA32ZA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8d6a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b8d6a.dir/build.make CMakeFiles/cmTC_b8d6a.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-lA32ZA'
+        Building CXX object CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b8d6a.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b8d6a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccfQECFR.s
+        GNU C++17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 4e0f319cd9945d8f5a9eeeeec1481ba5
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b8d6a.dir/'
+         as -v --64 -o CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccfQECFR.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_b8d6a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8d6a.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b8d6a 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b8d6a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b8d6a.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccG9XLOv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b8d6a /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b8d6a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b8d6a.'
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-lA32ZA'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-lA32ZA']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8d6a/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b8d6a.dir/build.make CMakeFiles/cmTC_b8d6a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-lA32ZA']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b8d6a.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b8d6a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccfQECFR.s]
+        ignore line: [GNU C++17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4e0f319cd9945d8f5a9eeeeec1481ba5]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b8d6a.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccfQECFR.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_b8d6a]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8d6a.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b8d6a ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b8d6a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b8d6a.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccG9XLOv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b8d6a /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccG9XLOv.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b8d6a] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_b8d6a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "qpl/sources/isal/CMakeLists.txt:8 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      cc (Ubuntu 13.2.0-23ubuntu4) 13.2.0
+      Copyright (C) 2023 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Clang using "--version" did not match "(clang version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMClang using "--version" did not match "armclang":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is HP using "-V" did not match "HP C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Intel using "--version" did not match "(ICC)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is SunPro using "-V" did not match "Sun C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is XL using "-qversion" did not match "XL C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is MSVC using "-?" did not match "Microsoft":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is TI using "-h" did not match "Texas Instruments":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IAR using "" did not match "IAR Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is YASM using "--version" did not match "(yasm)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ADSP using "-version" did not match "Analog Devices":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is QCC using "-V" did not match "gcc_nto":
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      NASM version 2.16.01
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      NASM version 2.16.01
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Clang using "--version" did not match "(clang version)":
+      NASM version 2.16.01
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMClang using "--version" did not match "armclang":
+      NASM version 2.16.01
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+      NASM version 2.16.01
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is HP using "-V" did not match "HP C":
+      nasm: error: unrecognised option `-V'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Intel using "--version" did not match "(ICC)":
+      NASM version 2.16.01
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      NASM version 2.16.01
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is SunPro using "-V" did not match "Sun C":
+      nasm: error: unrecognised option `-V'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is XL using "-qversion" did not match "XL C":
+      nasm: error: unrecognised option `-q'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is MSVC using "-?" did not match "Microsoft":
+      nasm: error: unrecognised option `-?'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is TI using "-h" did not match "Texas Instruments":
+      Usage: /usr/bin/nasm [-@ response_file] [options...] [--] filename
+             /usr/bin/nasm -v (or --v)
+      
+      Options (values in brackets indicate defaults):
+      
+          -h            show this text and exit (also --help)
+          -v (or --v)   print the NASM version number and exit
+          -@ file       response file; one command line option per line
+      
+          -o outfile    write output to outfile
+          --keep-all    output files will not be removed even if an error happens
+      
+          -Xformat      specify error reporting format (gnu or vc)
+          -s            redirect error messages to stdout
+          -Zfile        redirect error messages to file
+      
+          -M            generate Makefile dependencies on stdout
+          -MG           d:o, missing files assumed generated
+          -MF file      set Makefile dependency file
+          -MD file      assemble and generate dependencies
+          -MT file      dependency target name
+          -MQ file      dependency target name (quoted)
+          -MP           emit phony targets
+      
+          -f format     select output file format
+             bin                  Flat raw binary (MS-DOS, embedded, ...) [default]
+             ith                  Intel Hex encoded flat binary
+             srec                 Motorola S-records encoded flat binary
+             aout                 Linux a.out
+             aoutb                NetBSD/FreeBSD a.out
+             coff                 COFF (i386) (DJGPP, some Unix variants)
+             elf32                ELF32 (i386) (Linux, most Unix variants)
+             elf64                ELF64 (x86-64) (Linux, most Unix variants)
+             elfx32               ELFx32 (ELF32 for x86-64) (Linux)
+             as86                 as86 (bin86/dev86 toolchain)
+             obj                  Intel/Microsoft OMF (MS-DOS, OS/2, Win16)
+             win32                Microsoft extended COFF for Win32 (i386)
+             win64                Microsoft extended COFF for Win64 (x86-64)
+             ieee                 IEEE-695 (LADsoft variant) object file format
+             macho32              Mach-O i386 (Mach, including MacOS X and variants)
+             macho64              Mach-O x86-64 (Mach, including MacOS X and variants)
+             dbg                  Trace of all info passed to output stage
+             elf                  Legacy alias for "elf32"
+             macho                Legacy alias for "macho32"
+             win                  Legacy alias for "win32"
+      
+          -g            generate debugging information
+          -F format     select a debugging format (output format dependent)
+          -gformat      same as -g -F format
+             elf32:     dwarf     ELF32 (i386) dwarf (newer) [default]
+                        stabs     ELF32 (i386) stabs (older)
+             elf64:     dwarf     ELF64 (x86-64) dwarf (newer) [default]
+                        stabs     ELF64 (x86-64) stabs (older)
+             elfx32:    dwarf     ELFx32 (x86-64) dwarf (newer) [default]
+                        stabs     ELFx32 (x86-64) stabs (older)
+             obj:       borland   Borland Debug Records [default]
+             win32:     cv8       Codeview 8+ [default]
+             win64:     cv8       Codeview 8+ [default]
+             ieee:      ladsoft   LADsoft Debug Records [default]
+             macho32:   dwarf     Mach-O i386 dwarf for Darwin/MacOS [default]
+             macho64:   dwarf     Mach-O x86-64 dwarf for Darwin/MacOS [default]
+             dbg:       debug     Trace of all info passed to debug stage [default]
+      
+          -l listfile   write listing to a list file
+          -Lflags...    add optional information to the list file
+             -Lb        show builtin macro packages (standard and %use)
+             -Ld        show byte and repeat counts in decimal, not hex
+             -Le        show the preprocessed output
+             -Lf        ignore .nolist (force output)
+             -Lm        show multi-line macro calls with expanded parameters
+             -Lp        output a list file every pass, in case of errors
+             -Ls        show all single-line macro definitions
+             -Lw        flush the output after every line (very slow!)
+             -L+        enable all listing options except -Lw (very verbose!)
+      
+          -Oflags...    optimize opcodes, immediates and branch offsets
+             -O0        no optimization
+             -O1        minimal optimization
+             -Ox        multipass optimization (default)
+             -Ov        display the number of passes executed at the end
+          -t            assemble in limited SciTech TASM compatible mode
+      
+          -E (or -e)    preprocess only (writes output to stdout by default)
+          -a            don't preprocess (assemble only)
+          -Ipath        add a pathname to the include file path
+          -Pfile        pre-include a file (also --include)
+          -Dmacro[=str] pre-define a macro
+          -Umacro       undefine a macro
+         --pragma str   pre-executes a specific %%pragma
+         --before str   add line (usually a preprocessor statement) before the input
+         --no-line      ignore %line directives in input
+      
+         --prefix str   prepend the given string to the names of all extern,
+                        common and global symbols (also --gprefix)
+         --suffix str   append the given string to the names of all extern,
+                        common and global symbols (also --gprefix)
+         --lprefix str  prepend the given string to local symbols
+         --lpostfix str append the given string to local symbols
+      
+         --reproducible attempt to produce run-to-run identical output
+      
+          -w+x          enable warning x (also -Wx)
+          -w-x          disable warning x (also -Wno-x)
+          -w[+-]error   promote all warnings to errors (also -Werror)
+          -w[+-]error=x promote warning x to errors (also -Werror=x)
+             all                  all possible warnings
+             db-empty             no operand for data declaration [on]
+             ea                   all warnings prefixed with "ea-"
+             ea-absolute          absolute address cannot be RIP-relative [on]
+             ea-dispsize          displacement size ignored on absolute address [on]
+             float                all warnings prefixed with "float-"
+             float-denorm         floating point denormal [off]
+             float-overflow       floating point overflow [on]
+             float-toolong        too many digits in floating-point number [on]
+             float-underflow      floating point underflow [off]
+             forward              forward reference may have unpredictable results [on]
+             label                all warnings prefixed with "label-"
+             label-orphan         labels alone on lines without trailing `:' [on]
+             label-redef          label redefined to an identical value [off]
+             label-redef-late     label (re)defined during code generation [error]
+             number-overflow      numeric constant does not fit [on]
+             obsolete             all warnings prefixed with "obsolete-"
+             obsolete-nop         instruction obsolete and is a noop on the target CPU [on]
+             obsolete-removed     instruction obsolete and removed on the target CPU [on]
+             obsolete-valid       instruction obsolete but valid on the target CPU [on]
+             phase                phase error during stabilization [off]
+             pp                   all warnings prefixed with "pp-"
+             pp-else              all warnings prefixed with "pp-else-"
+             pp-else-elif         %elif after %else [on]
+             pp-else-else         %else after %else [on]
+             pp-empty-braces      empty %{} construct [on]
+             pp-environment       nonexistent environment variable [on]
+             pp-macro             all warnings prefixed with "pp-macro-"
+             pp-macro-def         all warnings prefixed with "pp-macro-def-"
+             pp-macro-def-case-single single-line macro defined both case sensitive and insensitive [on]
+             pp-macro-def-greedy-single single-line macro [on]
+             pp-macro-def-param-single single-line macro defined with and without parameters [error]
+             pp-macro-defaults    macros with more default than optional parameters [on]
+             pp-macro-params      all warnings prefixed with "pp-macro-params-"
+             pp-macro-params-legacy improperly calling multi-line macro for legacy support [on]
+             pp-macro-params-multi multi-line macro calls with wrong parameter count [on]
+             pp-macro-params-single single-line macro calls with wrong parameter count [on]
+             pp-macro-redef-multi redefining multi-line macro [on]
+             pp-open              all warnings prefixed with "pp-open-"
+             pp-open-braces       unterminated %{...} [on]
+             pp-open-brackets     unterminated %[...] [on]
+             pp-open-string       unterminated string [on]
+             pp-rep-negative      regative %rep count [on]
+             pp-sel-range         %sel() argument out of range [on]
+             pp-trailing          trailing garbage ignored [on]
+             pragma               all warnings prefixed with "pragma-"
+             pragma-bad           malformed %pragma [off]
+             pragma-empty         empty %pragma directive [off]
+             pragma-na            %pragma not applicable to this compilation [off]
+             pragma-unknown       unknown %pragma facility or directive [off]
+             prefix               all warnings prefixed with "prefix-"
+             prefix-bnd           invalid BND prefix [on]
+             prefix-hle           invalid HLE prefix [on]
+             prefix-lock          LOCK prefix on unlockable instructions [on]
+             prefix-opsize        invalid operand size prefix [on]
+             prefix-seg           segment prefix ignored in 64-bit mode [on]
+             ptr                  non-NASM keyword used in other assemblers [on]
+             regsize              register size specification ignored [on]
+             unknown-warning      unknown warning in -W/-w or warning directive [off]
+             user                 %warning directives [on]
+             warn-stack-empty     warning stack empty [on]
+             zeroing              RESx in initialized section becomes zero [on]
+             zext-reloc           relocation zero-extended to match output format [on]
+             other                any warning not specifically mentioned above [on]
+      
+         --limit-X val  set execution limit X
+             passes               total number of passes [unlimited]
+             stalled-passes       number of passes without forward progress [1000]
+             macro-levels         levels of macro expansion [10000]
+             macro-tokens         tokens processed during single-lime macro expansion [10000000]
+             mmacros              multi-line macros before final return [100000]
+             rep                  %rep count [1000000]
+             eval                 expression evaluation descent [8192]
+             lines                total source lines processed [2000000000]
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IAR using "" did not match "IAR Assembler":
+      nasm: fatal: no input file specified
+      Type /usr/bin/nasm -h for help.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+      nasm: fatal: no input file specified
+      Type /usr/bin/nasm -h for help.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "qpl/sources/isal/CMakeLists.txt:10 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is NASM using "-v" matched "(NASM version)":
+      NASM version 2.16.01
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "qpl/tools/third-party/google-test/googletest/cmake/internal_utils.cmake:70 (find_package)"
+      - "qpl/tools/third-party/google-test/googletest/CMakeLists.txt:88 (config_compiler_and_linker)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-kiLoQ8"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-kiLoQ8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-kiLoQ8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df93a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_df93a.dir/build.make CMakeFiles/cmTC_df93a.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-kiLoQ8'
+        Building C object CMakeFiles/cmTC_df93a.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -O3 -DNDEBUG -o CMakeFiles/cmTC_df93a.dir/src.c.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-kiLoQ8/src.c
+        Linking C executable cmTC_df93a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df93a.dir/link.txt --verbose=1
+        /usr/bin/cc -O3 -DNDEBUG CMakeFiles/cmTC_df93a.dir/src.c.o -o cmTC_df93a 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-kiLoQ8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:125 (check_library_exists)"
+    checks:
+      - "Looking for shm_open in rt"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-B9Jxah"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-B9Jxah"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_LIB_RT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-B9Jxah'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e723e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e723e.dir/build.make CMakeFiles/cmTC_e723e.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-B9Jxah'
+        Building C object CMakeFiles/cmTC_e723e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shm_open -O3 -DNDEBUG -o CMakeFiles/cmTC_e723e.dir/CheckFunctionExists.c.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-B9Jxah/CheckFunctionExists.c
+        Linking C executable cmTC_e723e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e723e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shm_open -O3 -DNDEBUG CMakeFiles/cmTC_e723e.dir/CheckFunctionExists.c.o -o cmTC_e723e  -lrt 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-B9Jxah'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:174 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HaBQzu"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HaBQzu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HaBQzu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_97b77/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_97b77.dir/build.make CMakeFiles/cmTC_97b77.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HaBQzu'
+        Building CXX object CMakeFiles/cmTC_97b77.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WALL  -Wall -O3 -DNDEBUG -std=c++11   -Wall -o CMakeFiles/cmTC_97b77.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HaBQzu/src.cxx
+        Linking CXX executable cmTC_97b77
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97b77.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall -O3 -DNDEBUG CMakeFiles/cmTC_97b77.dir/src.cxx.o -o cmTC_97b77 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HaBQzu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:175 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-745Mke"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-745Mke"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-745Mke'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae15b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ae15b.dir/build.make CMakeFiles/cmTC_ae15b.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-745Mke'
+        Building CXX object CMakeFiles/cmTC_ae15b.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WEXTRA  -Wall  -Wextra -O3 -DNDEBUG -std=c++11   -Wextra -o CMakeFiles/cmTC_ae15b.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-745Mke/src.cxx
+        Linking CXX executable cmTC_ae15b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae15b.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra -O3 -DNDEBUG CMakeFiles/cmTC_ae15b.dir/src.cxx.o -o cmTC_ae15b 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-745Mke'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:176 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHADOW"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rDtKLQ"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rDtKLQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHADOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rDtKLQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_06f01/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_06f01.dir/build.make CMakeFiles/cmTC_06f01.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rDtKLQ'
+        Building CXX object CMakeFiles/cmTC_06f01.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHADOW  -Wall  -Wextra  -Wshadow -O3 -DNDEBUG -std=c++11   -Wshadow -o CMakeFiles/cmTC_06f01.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rDtKLQ/src.cxx
+        Linking CXX executable cmTC_06f01
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06f01.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow -O3 -DNDEBUG CMakeFiles/cmTC_06f01.dir/src.cxx.o -o cmTC_06f01 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-rDtKLQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:177 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-voeof5"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-voeof5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WFLOAT_EQUAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-voeof5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_123e2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_123e2.dir/build.make CMakeFiles/cmTC_123e2.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-voeof5'
+        Building CXX object CMakeFiles/cmTC_123e2.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wall  -Wextra  -Wshadow  -Wfloat-equal -O3 -DNDEBUG -std=c++11   -Wfloat-equal -o CMakeFiles/cmTC_123e2.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-voeof5/src.cxx
+        Linking CXX executable cmTC_123e2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_123e2.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal -O3 -DNDEBUG CMakeFiles/cmTC_123e2.dir/src.cxx.o -o cmTC_123e2 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-voeof5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:178 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-0DA6AT"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-0DA6AT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-0DA6AT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_52a0f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_52a0f.dir/build.make CMakeFiles/cmTC_52a0f.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-0DA6AT'
+        Building CXX object CMakeFiles/cmTC_52a0f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -O3 -DNDEBUG -std=c++11   -Wold-style-cast -o CMakeFiles/cmTC_52a0f.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-0DA6AT/src.cxx
+        Linking CXX executable cmTC_52a0f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52a0f.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -O3 -DNDEBUG CMakeFiles/cmTC_52a0f.dir/src.cxx.o -o cmTC_52a0f 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-0DA6AT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:180 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WERROR"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bOhSM2"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bOhSM2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bOhSM2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fdbde/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fdbde.dir/build.make CMakeFiles/cmTC_fdbde.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bOhSM2'
+        Building CXX object CMakeFiles/cmTC_fdbde.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WERROR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror -O3 -DNDEBUG -std=c++11   -Werror -o CMakeFiles/cmTC_fdbde.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bOhSM2/src.cxx
+        Linking CXX executable cmTC_fdbde
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdbde.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror -O3 -DNDEBUG CMakeFiles/cmTC_fdbde.dir/src.cxx.o -o cmTC_fdbde 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bOhSM2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:184 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-KJ8Jyh"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-KJ8Jyh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-KJ8Jyh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_70098/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_70098.dir/build.make CMakeFiles/cmTC_70098.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-KJ8Jyh'
+        Building CXX object CMakeFiles/cmTC_70098.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSUGGEST_OVERRIDE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override -O3 -DNDEBUG -std=c++11   -Wsuggest-override -o CMakeFiles/cmTC_70098.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-KJ8Jyh/src.cxx
+        Linking CXX executable cmTC_70098
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70098.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override -O3 -DNDEBUG CMakeFiles/cmTC_70098.dir/src.cxx.o -o cmTC_70098 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-KJ8Jyh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:186 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-ZA1p8n"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-ZA1p8n"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-ZA1p8n'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_991f4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_991f4.dir/build.make CMakeFiles/cmTC_991f4.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-ZA1p8n'
+        Building CXX object CMakeFiles/cmTC_991f4.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic -O3 -DNDEBUG -std=c++11   -pedantic -o CMakeFiles/cmTC_991f4.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-ZA1p8n/src.cxx
+        Linking CXX executable cmTC_991f4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_991f4.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic -O3 -DNDEBUG CMakeFiles/cmTC_991f4.dir/src.cxx.o -o cmTC_991f4 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-ZA1p8n'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:187 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-MS5bzD"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-MS5bzD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-MS5bzD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa9aa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fa9aa.dir/build.make CMakeFiles/cmTC_fa9aa.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-MS5bzD'
+        Building CXX object CMakeFiles/cmTC_fa9aa.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -O3 -DNDEBUG -std=c++11   -pedantic-errors -o CMakeFiles/cmTC_fa9aa.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-MS5bzD/src.cxx
+        Linking CXX executable cmTC_fa9aa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa9aa.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -O3 -DNDEBUG CMakeFiles/cmTC_fa9aa.dir/src.cxx.o -o cmTC_fa9aa 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-MS5bzD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:188 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-Uaxsvz"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-Uaxsvz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-Uaxsvz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_889d3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_889d3.dir/build.make CMakeFiles/cmTC_889d3.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-Uaxsvz'
+        Building CXX object CMakeFiles/cmTC_889d3.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -O3 -DNDEBUG -std=c++11   -Wshorten-64-to-32 -o CMakeFiles/cmTC_889d3.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-Uaxsvz/src.cxx
+        c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+        c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+        gmake[1]: *** [CMakeFiles/cmTC_889d3.dir/build.make:78: CMakeFiles/cmTC_889d3.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-Uaxsvz'
+        gmake: *** [Makefile:127: cmTC_889d3/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:189 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-J3TPOj"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-J3TPOj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-J3TPOj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a53c3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a53c3.dir/build.make CMakeFiles/cmTC_a53c3.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-J3TPOj'
+        Building CXX object CMakeFiles/cmTC_a53c3.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing -O3 -DNDEBUG -std=c++11   -fstrict-aliasing -o CMakeFiles/cmTC_a53c3.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-J3TPOj/src.cxx
+        Linking CXX executable cmTC_a53c3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a53c3.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing -O3 -DNDEBUG CMakeFiles/cmTC_a53c3.dir/src.cxx.o -o cmTC_a53c3 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-J3TPOj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:192 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QUL22k"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QUL22k"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QUL22k'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ac326/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ac326.dir/build.make CMakeFiles/cmTC_ac326.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QUL22k'
+        Building CXX object CMakeFiles/cmTC_ac326.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations -O3 -DNDEBUG -std=c++11   -Wno-deprecated-declarations -o CMakeFiles/cmTC_ac326.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QUL22k/src.cxx
+        Linking CXX executable cmTC_ac326
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac326.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations -O3 -DNDEBUG CMakeFiles/cmTC_ac326.dir/src.cxx.o -o cmTC_ac326 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-QUL22k'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:202 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-e0hMtK"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-e0hMtK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-e0hMtK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_42484/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_42484.dir/build.make CMakeFiles/cmTC_42484.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-e0hMtK'
+        Building CXX object CMakeFiles/cmTC_42484.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -O3 -DNDEBUG -std=c++11   -Wno-deprecated -o CMakeFiles/cmTC_42484.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-e0hMtK/src.cxx
+        Linking CXX executable cmTC_42484
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42484.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -O3 -DNDEBUG CMakeFiles/cmTC_42484.dir/src.cxx.o -o cmTC_42484 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-e0hMtK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:210 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bFEKd1"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bFEKd1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bFEKd1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0704/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f0704.dir/build.make CMakeFiles/cmTC_f0704.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bFEKd1'
+        Building CXX object CMakeFiles/cmTC_f0704.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -O3 -DNDEBUG -std=c++11   -Wstrict-aliasing -o CMakeFiles/cmTC_f0704.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bFEKd1/src.cxx
+        Linking CXX executable cmTC_f0704
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0704.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -O3 -DNDEBUG CMakeFiles/cmTC_f0704.dir/src.cxx.o -o cmTC_f0704 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-bFEKd1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:215 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WD654"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HAwY0H"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HAwY0H"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WD654"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HAwY0H'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_14f41/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_14f41.dir/build.make CMakeFiles/cmTC_14f41.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HAwY0H'
+        Building CXX object CMakeFiles/cmTC_14f41.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -O3 -DNDEBUG -std=c++11   -wd654 -o CMakeFiles/cmTC_14f41.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HAwY0H/src.cxx
+        c++: error: unrecognized command-line option '-wd654'
+        c++: error: unrecognized command-line option '-wd654'
+        gmake[1]: *** [CMakeFiles/cmTC_14f41.dir/build.make:78: CMakeFiles/cmTC_14f41.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-HAwY0H'
+        gmake: *** [Makefile:127: cmTC_14f41/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:216 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-neMlLk"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-neMlLk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-neMlLk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e48f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4e48f.dir/build.make CMakeFiles/cmTC_4e48f.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-neMlLk'
+        Building CXX object CMakeFiles/cmTC_4e48f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O3 -DNDEBUG -std=c++11   -Wthread-safety -o CMakeFiles/cmTC_4e48f.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-neMlLk/src.cxx
+        c++: error: unrecognized command-line option '-Wthread-safety'
+        c++: error: unrecognized command-line option '-Wthread-safety'
+        gmake[1]: *** [CMakeFiles/cmTC_4e48f.dir/build.make:78: CMakeFiles/cmTC_4e48f.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-neMlLk'
+        gmake: *** [Makefile:127: cmTC_4e48f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:267 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_COVERAGE"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-w3P8wD"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-w3P8wD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_COVERAGE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-w3P8wD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f8757/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f8757.dir/build.make CMakeFiles/cmTC_f8757.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-w3P8wD'
+        Building CXX object CMakeFiles/cmTC_f8757.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_COVERAGE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage -O3 -DNDEBUG -std=c++11   --coverage -o CMakeFiles/cmTC_f8757.dir/src.cxx.o -c /home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-w3P8wD/src.cxx
+        Linking CXX executable cmTC_f8757
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8757.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage -O3 -DNDEBUG CMakeFiles/cmTC_f8757.dir/src.cxx.o -o cmTC_f8757 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeScratch/TryCompile-w3P8wD'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "qpl/tools/third-party/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:297 (cxx_feature_check)"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3067b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3067b.dir/build.make CMakeFiles/cmTC_3067b.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_3067b.dir/std_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -O3 -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_3067b.dir/std_regex.cpp.o -c /home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/std_regex.cpp
+        Linking CXX executable cmTC_3067b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3067b.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -O3 -DNDEBUG CMakeFiles/cmTC_3067b.dir/std_regex.cpp.o -o cmTC_3067b 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "qpl/tools/third-party/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:298 (cxx_feature_check)"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_GNU_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_72f0e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_72f0e.dir/build.make CMakeFiles/cmTC_72f0e.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_72f0e.dir/gnu_posix_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -O3 -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_72f0e.dir/gnu_posix_regex.cpp.o -c /home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/gnu_posix_regex.cpp
+        /home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/gnu_posix_regex.cpp:1:10: fatal error: gnuregex.h: No such file or directory
+            1 | #include <gnuregex.h>
+              |          ^~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_72f0e.dir/build.make:78: CMakeFiles/cmTC_72f0e.dir/gnu_posix_regex.cpp.o] Error 1
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_72f0e/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RUN_HAVE_GNU_POSIX_REGEX"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "qpl/tools/third-party/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:299 (cxx_feature_check)"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_39a32/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_39a32.dir/build.make CMakeFiles/cmTC_39a32.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_39a32.dir/posix_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -O3 -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_39a32.dir/posix_regex.cpp.o -c /home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/posix_regex.cpp
+        Linking CXX executable cmTC_39a32
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39a32.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -O3 -DNDEBUG CMakeFiles/cmTC_39a32.dir/posix_regex.cpp.o -o cmTC_39a32 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "qpl/tools/third-party/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:308 (cxx_feature_check)"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ccb64/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ccb64.dir/build.make CMakeFiles/cmTC_ccb64.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_ccb64.dir/steady_clock.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -O3 -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_ccb64.dir/steady_clock.cpp.o -c /home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/steady_clock.cpp
+        Linking CXX executable cmTC_ccb64
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccb64.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -O3 -DNDEBUG CMakeFiles/cmTC_ccb64.dir/steady_clock.cpp.o -o cmTC_ccb64 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "qpl/tools/third-party/benchmark/cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "qpl/tools/third-party/benchmark/CMakeLists.txt:312 (cxx_feature_check)"
+    directories:
+      source: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+      binary: "/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/chenqh23/IAA_benchmarking/qpl/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/Modules;/home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/home/chenqh23/IAA_benchmarking/qpl/cmake/overrides.cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_19377/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_19377.dir/build.make CMakeFiles/cmTC_19377.dir/build
+        gmake[1]: Entering directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_19377.dir/pthread_affinity.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -O3 -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_19377.dir/pthread_affinity.cpp.o -c /home/chenqh23/IAA_benchmarking/qpl/tools/third-party/benchmark/cmake/pthread_affinity.cpp
+        Linking CXX executable cmTC_19377
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19377.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -O3 -DNDEBUG CMakeFiles/cmTC_19377.dir/pthread_affinity.cpp.o -o cmTC_19377 
+        gmake[1]: Leaving directory '/home/chenqh23/IAA_benchmarking/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+      exitCode: 0
+...
